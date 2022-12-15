@@ -10,9 +10,9 @@ function palindrome(str){
              const l = str[i];
              const r = str[len-1-i];
              if (l.toUpperCase() !== r.toUpperCase()) {
-                 return 'false';
+                 return false;
              }
          }
-         return 'true';
+         return true;
 }
 module.exports = palindrome
