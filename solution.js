@@ -7,7 +7,9 @@ function palindrome(str){
          for (let i = 0; i < len / 2; i++) {
 
              // check if first and last string are same
-             if (string[i] !== string[len - 1 - i]) {
+             const l = string[i];
+             const r = string[len-1-i];
+             if (l.toUpperCase() !== r.toUpperCase()) {
                  return 'false';
              }
          }
